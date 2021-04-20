@@ -1,21 +1,23 @@
-import React from "react"
+import React, { Fragment } from "react"
 import Title from "./Titles"
 
 const Titlelist = ({titles}) => {
     
-    const titleNodes = titles.map((title) => {
+    const titleList = titles.map((title) => {
         return (
-            <Title ID = {title.id}  URL= {title.url} name = {title.name} >
+            <Title key = {title.id}  URL= {title.url} name = {title.name} />
         );
     })
 
 
 
-return(
+return (
     <>
-    {titleNodes}
+    <div>
+    {titleList} 
+    </div>
     </>
-    )
-};
+)
+}
 
 export default Titlelist;

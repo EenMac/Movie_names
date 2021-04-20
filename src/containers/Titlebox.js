@@ -33,8 +33,9 @@ const Titlebox = () => {
           ]
     )
     return (
+      <div>
         <Titlelist titles = {titles} />
-    );
+      </div>);
 };
 
 export default Titlebox;

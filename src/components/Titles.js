@@ -1,12 +1,13 @@
 import React from "react"
 
-const Title = ({name, url}) => {
+const Title = ({name, URL}) => {
 
 
     return(
-        <>
-        <h2 href = {URL} > {name} </h2>
-        </>
+    
+        <a href = {URL} > 
+        {name} 
+        </a>
     )
 }
 
